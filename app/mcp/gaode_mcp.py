@@ -79,7 +79,7 @@ class GaoDeMCPClient:
             await self.list_tools()  # 如果工具列表为空，则获取工具列表
 
         # 校验工具名称是否在已注册的工具列表中
-        if tool_name not in [tool["name"] for tool in self._tools]:
+        if tool_name not in [tool["function"]["name"] for tool in self._tools]:
             raise ValueError(f"工具 '{tool_name}' 未注册或不可用")
 
         return await self.session.call_tool(tool_name, params)  # 调用工具并返回结果

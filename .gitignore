@@ -1,0 +1,29 @@
+# 环境变量文件
+.env
+
+# Python缓存目录
+__pycache__/
+**/__pycache__/
+
+# 忽略所有 .pyc 文件
+*.pyc
+
+*$py.class
+
+# IDE相关
+.idea/
+.vscode/
+
+# 日志文件
+*.log
+
+# 测试相关
+.pytest_cache/
+
+# 数据库文件
+*.sqlite
+
+# 打包文件
+*.egg-info/
+dist/
+build/
