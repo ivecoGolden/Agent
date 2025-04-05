@@ -1,0 +1,14 @@
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-multipart>=0.0.5
+python-dotenv>=0.19.0
+pydantic>=2.0
+pydantic-settings>=2.0
+PyJWT>=2.8.0  # 验证
+httpx>=0.24.1  # 异步HTTP客户端
+openai>=1.12.0  # OpenAI API客户端
+mcp[cli]
+
+# 测试相关
+pytest>=7.0.0  # 单元测试框架
+pytest-asyncio>=0.21.0  # 异步测试支持
